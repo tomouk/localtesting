@@ -9,5 +9,5 @@
     file:
       path: /tmp/ansibletestfile.txt
       state: touch
-      owner: root
-      group: root
+      owner: atuser
+      group: atuser
