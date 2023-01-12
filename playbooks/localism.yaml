@@ -1,0 +1,14 @@
+---
+- name: Create new root owned file
+  hosts: all
+  become: true
+  become_method: sudo
+  become_user: root
+  
+  tasks:
+  - name: Create file under /tmp
+    file:
+      path: /tmp/localvmtesting.txt
+      state: touch
+      owner: root
+      group: root
