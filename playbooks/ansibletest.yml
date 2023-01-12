@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: true
+  become_method: sudo
+  become_user: root
+  
+  tasks:
+  - name: Create new file under /tmp
+    file:
+      path: /tmp/ansibletestfile.txt
+      state: touch
+      owner: root
+      group: root
