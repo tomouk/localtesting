@@ -15,5 +15,5 @@
   - name: Pull new file to AT server
     fetch:
       src: /tmp/ansibletestfile.txt
-      dest: /home/admin
+      dest: /ansiblefiles
       flat: yes
