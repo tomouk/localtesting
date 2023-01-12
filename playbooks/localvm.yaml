@@ -10,5 +10,5 @@
     file:
       path: /tmp/localvmtesting.txt
       state: touch
-      owner: root
-      group: root
+      owner: atuser
+      group: atuser
