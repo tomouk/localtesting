@@ -11,3 +11,8 @@
       state: touch
       owner: atuser
       group: atuser
+      
+  - name: Pull new file to AT server
+    fetch:
+      src: /tmp/ansibletestfile.txt
+      dest: /tmp/
