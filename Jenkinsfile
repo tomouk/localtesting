@@ -1,5 +1,5 @@
 #!/bin/bash
-node(master) {
+node("master") {
 
   stage ('Test Stage 1') {
     withCredentials([[$class: 'UsernamePasswordMultiBinding',
