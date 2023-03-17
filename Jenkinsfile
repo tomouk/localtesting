@@ -9,6 +9,7 @@ node("master") {
       
       try {
         sh ''' #!/bin/bash
+        yum update git -y
         git clone https://$AUSER:$APASSWORD@github.com/tomouk/localtesting.git
         '''
       }
