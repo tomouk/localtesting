@@ -9,6 +9,7 @@
       try {
         sh ''' #!/bin/bash
         echo "Hello"
+        '''
         }
        }
       }
