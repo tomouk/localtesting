@@ -10,6 +10,11 @@
         sh ''' #!/bin/bash
         echo "Hello"
         '''
+      }
+      catch(error) {
+        echo "Stage Failed!"
+        throw error
+      }
         }
        }
       }
