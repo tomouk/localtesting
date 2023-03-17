@@ -1,4 +1,5 @@
 #!/bin/bash
+node(master)
 
   stage ('Test Stage 1') {
     withCredentials([[$class: 'UsernamePasswordMultiBinding',
@@ -17,4 +18,4 @@
       }
         }
        }
-      
+}
