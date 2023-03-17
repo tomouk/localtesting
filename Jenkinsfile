@@ -1,4 +1,4 @@
-#!
+#!/bin/bash
 
   stage ('Test Stage 1') {
     withCredentials([[$class: 'UsernamePasswordMultiBinding',
@@ -10,5 +10,5 @@
         sh ''' #!/bin/bash
         echo "Hello"
         }
-        }
-        }
+       }
+      }
