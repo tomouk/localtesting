@@ -9,7 +9,7 @@ node("master") {
       
       try {
         sh ''' #!/bin/bash
-        echo "Hello"
+        git clone https://$AUSER:$APASSWORD@github.com/tomouk/localtesting.git
         '''
       }
       catch(error) {
