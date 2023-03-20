@@ -13,7 +13,7 @@ node("master") {
         #git clone git@github.com:tomouk/localtesting.git
         echo Hello
         ls -l
-        cd ..
+        cd playbooks
         ls -l
         '''
       }
