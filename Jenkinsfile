@@ -2,10 +2,10 @@
 node("master") {
 
   stage ('Test Stage 1') {
-    withCredentials([[$class: 'UsernamePasswordMultiBinding',
-                      credentialsId: "james372",
-                      usernameVariable: 'AUSER',
-                      passwordVariable: 'APASSWORD']]) {
+   // withCredentials([[$class: 'UsernamePasswordMultiBinding',
+     //                 credentialsId: "james372",
+       //               usernameVariable: 'AUSER',
+         //             passwordVariable: 'APASSWORD']]) {
       
       try {
         sh ''' #!/bin/bash
@@ -19,5 +19,5 @@ node("master") {
         throw error
       }
         }
-       }
+     //  }
 }
