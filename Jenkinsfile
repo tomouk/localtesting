@@ -3,7 +3,7 @@ node("master") {
 
   stage ('Test Stage 1') {
     withCredentials([[$class: 'UsernamePasswordMultiBinding',
-                      credentialsId: "james372GH",
+                      credentialsId: "james372",
                       usernameVariable: 'AUSER',
                       passwordVariable: 'APASSWORD']]) {
       
