@@ -9,6 +9,7 @@ node("master") {
       
       try {
         sh ''' #!/bin/bash
+        rm -rf localtesting
         #git clone https://$AUSER:$APASSWORD@github.com/tomouk/localtesting.git
         git clone git@github.com:tomouk/localtesting.git
         echo Hello
