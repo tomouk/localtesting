@@ -13,6 +13,8 @@ node("master") {
         #git clone git@github.com:tomouk/localtesting.git
         echo Hello
         ls -l
+        cd ..
+        ls -l
         '''
       }
       catch(error) {
