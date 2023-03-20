@@ -15,6 +15,8 @@ node("master") {
         echo Hello
         id
         ls -l
+        cd localtesting
+        ls
         cd playbooks
         ls -l
         '''
