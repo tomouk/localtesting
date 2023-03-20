@@ -14,7 +14,7 @@ node("master") {
         echo Hello
         id
         ls -l
-        cd playbooks
+        #cd playbooks
         ls -l
         '''
       }
