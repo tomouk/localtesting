@@ -6,8 +6,8 @@ node("master") {
       withCredentials([[$class: 'sshUserPrivateKeyMultiBinding',
      //                 credentialsId: "james372",
                         credentialsId: "jentogh",]]) {
-       //               usernameVariable: 'AUSER',
-         //             passwordVariable: 'APASSWORD']]) {
+                      usernameVariable: 'AUSER',
+                      passwordVariable: 'APASSWORD']]) {
       
       try {
         sh ''' #!/bin/bash
