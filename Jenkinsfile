@@ -5,7 +5,7 @@ node("master") {
    // withCredentials([[$class: 'UsernamePasswordMultiBinding',
       withCredentials([[$class: 'sshUserPrivateKeyMultiBinding',
      //                 credentialsId: "james372",
-                        credentialsId: "jentogh",
+                        credentialsId: "jentogh",]]) {
        //               usernameVariable: 'AUSER',
          //             passwordVariable: 'APASSWORD']]) {
       
@@ -21,5 +21,5 @@ node("master") {
         throw error
       }
         }
-     //  }
+       }
 }
